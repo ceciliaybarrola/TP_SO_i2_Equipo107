@@ -7,3 +7,55 @@ d-¿Los datos que tenia en mi repositorio , editados por mi, se pierden si quier
 el fork?
 e- realizar un listado con los apellidos y nombre de los alumnos , junto con los comando y
 orden de ejecución de los mismos, que debieron usar para este TP
+
+c- Si se puede actualizar el estado del fork de alfa al fork de gamma
+d- No se pierden los datos
+e- Cecilia ybarrola:
+	(El repositorio fue creado desde github)
+	git clone https://github.com/ceciliaybarrola/TP_SO_i2_Equipo107
+
+   Facundo Caffaro:
+	git clone https://github.com/Caffaro237/TP_SO_i2_Equipo107.git
+	git status
+	git add .
+	git commit -m "Modificacion del archivo fork.txt"
+	git push
+
+  Cecilia ybarrola:	
+	(Creacion archivo Nuevo Dato)
+	echo > NuevoDato.txt
+	git add .
+	git commit -m "Create NuevoDato.txt"
+	git push
+
+   Facundo Caffaro:
+	git remote add upstream https://github.com/ceciliaybarrola/TP_SO_i2_Equipo107.git
+	git fetch upstream
+	git rebase upstream/main
+	git push -f origin main
+
+   Cecilia ybarrola:
+	(Creacion archivo Respuestas)
+	echo > respuesta_I2_Equipo107.txt
+	git add .
+	git commit -m "Create respuesta_I2_Equipo107.txt"
+	git push
+
+   Facundo Caffaro:
+	git remote add upstream https://github.com/ceciliaybarrola/TP_SO_i2_Equipo107.git
+	git fetch upstream
+	git rebase upstream/main
+	git push -f origin main
+	git add .
+	git commit -m "Modificacion del archivo respuesta_I2_Equipo107.txt"
+	git push
+
+   Cecilia ybarrola:
+	(Comienzo a reponder las respuestas desde el .txt desde mi repositorio local)
+	git add .
+	git commit -m "Beta Commit respuestas"
+	git push
+
+	(Estos ultimos comandos los ejecutare para actualizar este .txt)
+
+
